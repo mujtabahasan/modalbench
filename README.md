@@ -392,7 +392,3 @@ Open an issue or PR.
 MIT License — see [LICENSE](LICENSE).
 
 ---
-
-## Acknowledgments
-
-We thank the anonymous reviewers of the ICLR 2026 Workshop on Logical Reasoning of Large Language Models for their constructive feedback. We also thank Shiraz Zaman and Martin Liu, founders of NAND AI, for mentorship and guidance. All evaluations were run via free API tiers on Google AI Studio, Groq, and Cerebras.
