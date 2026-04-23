@@ -119,7 +119,7 @@ modalbench/
 ### Install
 
 ```bash
-git clone https://github.com/[your-username]/modalbench.git
+git clone https://github.com/mujtabahasan/modalbench.git
 cd modalbench
 pip install -r requirements.txt
 ```
@@ -366,7 +366,7 @@ The benchmark has been independently verified:
   author    = {Hasan, Mujtaba},
   booktitle = {ICLR 2026 Workshop on Logical Reasoning of Large Language Models},
   year      = {2026},
-  url       = {https://github.com/[your-username]/modalbench}
+  url       = {https://github.com/mujtabahasan/modalbench}
 }
 ```
 
