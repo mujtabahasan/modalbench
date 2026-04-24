@@ -93,7 +93,7 @@ modalbench/
 │
 ├── results/
 │   ├── results_unified.csv                # 27,000-row evaluation table (re-run with 16k tokens, RobustParser)
-│   └── res_final_analyzed.csv             # Original 27,000-row table (500-char truncation, old parser — kept for comparison)
+│   └──  results.zio                       # zip file containing inference of 3 LLMs with 3 prompting strategies (9 files)
 │
 ├── figures/                               # All paper figures (PNG + PDF)
 │   ├── fig1_overview.{png,pdf}
@@ -127,6 +127,8 @@ pip install -r requirements.txt
 ### Reproduce paper figures from cached results (no API keys needed)
 
 ```bash
+cd modalbench
+unzip results/results.zip -d .
 python build_unified_results.py \
   --input_dir results/ \
   --bench data/bench_final.json \
@@ -240,7 +242,7 @@ JSON list of 3,000 problem objects:
 | Llama 3.3 70B | Standard | Groq | 7.8% | World-enum | **81.4%** |
 | Qwen3-235B Instruct | MoE | Cerebras | 0.0% | World-enum | **81.5%** |
 
-All accessed via free API tiers with a 16k-token generation budget.
+All accessed via API tiers with a 16k-token generation budget.
 
 ---
 
@@ -304,9 +306,7 @@ See `paper/PARSER_CORRECTION_NOTICE.md` for the full analysis of how this bug wa
 
 ---
 
-## NeurIPS Extensions
-
-`modalbench_neurips_extensions.py` provides additional capabilities for the NeurIPS 2026 Evaluations & Datasets submission:
+## Extensions
 
 | Extension | Class/Function | Purpose |
 |---|---|---|
